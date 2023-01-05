@@ -1,0 +1,132 @@
+/* By Manoj*/
+.address-col a {
+	color: white;
+}
+.news-articles {
+    width: 555px;
+}
+#matrixAdvantage li {
+    list-style: disc;
+}
+#course-concept p, #course-description p, #course-description h5 {
+    padding: 0 20px;
+}
+
+.slick-slide { padding: 0px 2px;}
+
+.slider-main .slick-dots {
+    bottom: -25px !important;
+}
+.global-query-warp .form-control { border-radius: inherit;}
+.validationError { color: red;text-align: left;}
+.redBorder {
+    border: 1px solid red !important;
+}
+.success {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.offers-branch {
+    background: white !important;
+	width: 100px !important;
+}
+.footer .nav-item strong {
+    color: white;
+}
+#lap {
+    height: 260px;
+    width: 690px;
+}
+#lap1 {
+    position: absolute;
+    top: 42px;
+    left: 109px;
+    width: 352px;
+    height: 254px;
+}
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url(http://www.matrixedu.in/assets/default/img/TxzC70f.png) no-repeat;
+    cursor: pointer;
+}
+#facilities ul {
+    margin-left: 15px;
+}
+#facilities li{list-style:disclosure-closed;}
+.testimonials li {
+    float: left;
+    width: 100%;
+	margin-bottom: 15px;
+}
+.testimonials #left {
+    text-align: center;
+}
+.testimonials p { margin: 0; }
+.testimonial_author, .testimonial_otherdiv  {text-align: right;}
+#testimonials #addNew{text-align: right !important;
+float: left;
+width: 100%;}
+.testimonials img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 50%;
+	width: 100%;
+}
+.testimonials #left, .testimonials #right {
+    float: left;
+}
+.classrom-heading {
+    font-size: 20px;
+}
+@media screen and (max-width: 375px) {
+ 	#lap {
+    height: 160px;
+    width: 685px;
+}
+	#lap1 {
+    width: 223px;
+    height: 188px;
+    margin-left: -34px;
+    margin-top: -18px;
+    padding-bottom: 40%;
+}
+	#testimonials #addNew {
+    text-align: center !important;
+}
+	.testimonial_image{float: left;
+width: 100%;
+clear: both;
+text-align: center;}
+	.testimonials img {
+    width: 50%;
+    float: initial;
+}
+	.testimonials p {
+    margin: 0px 12px;
+}
+}

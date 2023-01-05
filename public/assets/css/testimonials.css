@@ -1,0 +1,227 @@
+/*--All page common--*/
+.innerheader {
+    background-color: #c4faf2;
+    border-bottom: 1px solid #93e1d6;
+    background-image: url(../images/innerbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+
+.innerheader h2 {
+    font-size: 33px;
+    color: #002147;
+    font-weight: 600;
+    font-family: 'montserratbold';
+    padding: 0px 0;
+    position: relative;
+
+}
+
+.innerheader h2 span {
+    z-index: 3;
+    position: relative;
+}
+
+.innerheader h2:after {
+    position: absolute;
+    z-index: 0;
+    height: 10px;
+    max-width: 100px;
+    background-color: #b0e4e1;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.breadcrumbs-nav {
+    border-bottom: 1px solid #e5e8ec;
+    padding: 10px 0;
+}
+
+.breadcrumbs-nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+    color: #2f7544;
+}
+
+
+.breadcrumbs-nav ul li {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+
+}
+
+.breadcrumbs-nav ul li img {
+    max-width: 10px;
+    max-height: 10px;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1px;
+}
+
+.breadcrumbs-nav ul li a {
+    color: #002147;
+}
+
+
+/*--//All page common--*/
+.studentmessage {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 27px 0px rgba(44, 44, 44, 0.05);
+    height: 100%;
+    padding: 15px;
+
+}
+
+.studentmessage p {
+    font-size: 14px;
+    font-family: 'montserratregular';
+    line-height: 1.6;
+    padding: 2px 10px 10px 10px;
+    margin: 0px;
+}
+
+.studnetmsg-img {
+    width: 77px;
+    height: 77px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.studnetmsg-img img {
+
+    border-radius: 50%;
+}
+
+
+.student-otherinfo {
+    margin-top: 10px;
+    padding: 2px 10px 10px 10px;
+}
+
+.student-otherinfo ul li {
+    font-size: 12px;
+    color: #252c34;
+    font-family: 'montserratbold';
+    padding: 6px 0 0 0;
+}
+
+.student-otherinfo ul li span {
+    color: #5b5f63;
+    font-family: 'montserratregular';
+
+}
+
+
+.messageblock {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: calc(100% - 77px);
+}
+
+
+.testimonial-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.testimonialbanner {
+    position: relative;
+    margin-bottom: 33px;
+}
+
+
+.testimonial-title {
+    padding: 73px 0 0 0;
+}
+
+.testimonial-title p {
+    font-size: 27px;
+    color: #2f7644;
+    font-family: 'montserratsemibold';
+    text-transform: uppercase;
+}
+
+.testimonial-title h3 {
+    font-size: 45px;
+    color: #252b33;
+    font-family: 'montserratbold';
+    text-transform: uppercase;
+    padding-left: 20px;
+    border-left: 6px solid #2f7544;
+}
+
+.testimonial-title h3 span {
+    display: block;
+}
+
+.btnbox-testim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnbox-testim a {
+    border-radius: 20px;
+    background-color: #337544;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+
+}
+
+.btnbox-testim a:hover {
+    border-radius: 20px;
+    background-color: #002147;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+
+}
+
+@media (max-width: 991.98px) {
+    .testimonial-title h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 640.98px) {
+    .btnbox-testim {
+        flex-wrap: wrap;
+    }
+
+    .testimonial-title {
+        padding: 21px 0 0 0;
+    }
+
+    .testimonial-title h3 {
+        font-size: 24px;
+    }
+
+    .testimonial-title p {
+        font-size: 21px;
+    }
+
+    .btnbox-testim a {
+        font-size: 13px;
+    }
+}

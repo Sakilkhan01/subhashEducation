@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'matrixedu';
+    src:  url('../fonts/matrixedu.eot?j9a6s4');
+    src:  url('../fonts/matrixedu.eot?j9a6s4#iefix') format('embedded-opentype'),
+      url('../fonts/matrixedu.ttf?j9a6s4') format('truetype'),
+      url('../fonts/matrixedu.woff?j9a6s4') format('woff'),
+      url('../fonts/matrixedu.svg?j9a6s4#matrixedu') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'matrixedu' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-09:before {
+    content: "\e90f";
+  }
+  .icon-08 .path1:before {
+    content: "\e90c";
+    color: rgb(255, 0, 0);
+  }
+  .icon-08 .path2:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-07:before {
+    content: "\e90e";
+  }
+  .icon-06:before {
+    content: "\e90b";
+  }
+  .icon-05:before {
+    content: "\e900";
+  }
+  .icon-04:before {
+    content: "\e901";
+  }
+  .icon-03:before {
+    content: "\e902";
+  }
+  .icon-02:before {
+    content: "\e903";
+  }
+  .icon-01 .path1:before {
+    content: "\e904";
+    color: rgb(233, 233, 224);
+  }
+  .icon-01 .path2:before {
+    content: "\e905";
+    margin-left: -1em;
+    color: rgb(218, 216, 203);
+  }
+  .icon-01 .path3:before {
+    content: "\e906";
+    margin-left: -1em;
+    color: rgb(204, 77, 77);
+  }
+  .icon-01 .path4:before {
+    content: "\e907";
+    margin-left: -1em;
+    color: rgb(204, 77, 77);
+  }
+  .icon-01 .path5:before {
+    content: "\e908";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-01 .path6:before {
+    content: "\e909";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+  .icon-01 .path7:before {
+    content: "\e90a";
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }

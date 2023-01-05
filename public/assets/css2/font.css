@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Celias';
+    src: url('../fonts/Montserrat-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Celias';
+    src: url('../fonts/Montserrat-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Celias';
+    src: url('../fonts/Montserrat-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Celias';
+    src: url('../fonts/Montserrat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

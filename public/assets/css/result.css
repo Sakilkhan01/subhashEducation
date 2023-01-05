@@ -1,0 +1,339 @@
+/*--All page common--*/
+.innerheader {
+    background-color: #c4faf2;
+    border-bottom: 1px solid #93e1d6;
+    background-image: url(../images/innerbanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+
+.innerheader h2 {
+    font-size: 33px;
+    color: #002147;
+    font-weight: 600;
+    font-family: 'montserratbold';
+    padding: 0px 0;
+    position: relative;
+
+}
+
+.innerheader h2 span {
+    z-index: 3;
+    position: relative;
+}
+
+.innerheader h2:after {
+    position: absolute;
+    z-index: 0;
+    height: 10px;
+    max-width: 100px;
+    background-color: #b0e4e1;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.breadcrumbs-nav {
+    border-bottom: 1px solid #e5e8ec;
+    padding: 10px 0;
+}
+
+.breadcrumbs-nav ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+    color: #2f7544;
+}
+
+
+.breadcrumbs-nav ul li {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+
+}
+
+.breadcrumbs-nav ul li img {
+    max-width: 10px;
+    max-height: 10px;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1px;
+}
+
+.breadcrumbs-nav ul li a {
+    color: #002147;
+}
+
+
+/*--//All page common--*/
+
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.result-banner {
+    background: url(../images/restults-banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+
+
+.result-bannertext {
+    font-size: 18px;
+    margin-top: 100px;
+
+}
+
+.result-bannertext p {
+    font-size: 30px;
+    font-family: 'montserratlight';
+    color: #002147;
+}
+
+.result-bannertext p span {
+    font-family: 'montserratsemibold';
+}
+
+.result-bannertext h3 {
+    font-size: 33px;
+    font-family: 'montserratblack';
+    color: #002147;
+}
+
+
+.result-bannertext ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.result-bannertext ul li {
+    font-size: 18px;
+    font-family: 'montserratregular';
+    padding: 0 0 0 20px;
+    position: relative;
+}
+
+.result-bannertext ul li:after {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #2f7544;
+    content: "";
+    left: 0;
+    top: 10px;
+}
+
+
+
+.totalbox {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../images/resultpage-img.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    box-shadow: 0px 15px 32.55px 2.45px rgba(37, 43, 51, 0.12);
+    max-width: 929px;
+    height: 152px;
+    margin: 0 auto;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'montserratbold';
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.totalbox p {
+    font-size: 21px;
+    font-family: 'montserratregular';
+    text-transform: inherit;
+
+}
+
+.totalbox p span {
+    color: #ffbd33;
+    font-family: 'montserratbold';
+    font-size: 37px;
+}
+
+
+.resuly-year {
+    width: 100%;
+}
+
+.examinfor {
+    border-radius: 8px;
+    background-color: #ecfdf8;
+    min-height: 135px;
+    padding: 20px 30px;
+    color: #252b33;
+    font-family: 'montserratbold';
+    font-size: 17px;
+}
+
+.examinfor p {
+    font-size: 18px;
+    color: #252b33;
+    font-family: 'montserratregular';
+}
+
+.examinfor p span {
+    font-family: 'montserratbold';
+}
+
+.examinfor a {
+    display: inline-block;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #337544;
+    font-family: 'montserratregular';
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 9px 17px;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.examinfor a:hover {
+    background-color: #002147;
+
+
+}
+
+.resuly-year ul li {
+    position: relative;
+    border-left: 3px solid #dafbf2;
+    padding-left: 28px;
+    padding-bottom: 25px;
+
+}
+
+.resuly-year ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.resuly-year ul li:after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(218, 251, 242);
+    left: -13px;
+    top: 19px;
+
+}
+
+.resuly-year ul li:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #337544;
+    left: -6px;
+    top: 26px;
+    z-index: 2;
+
+}
+
+.year {
+    font-family: 'montserratregular';
+    font-size: 13px;
+    color: #252b33;
+    max-width: 90px;
+    text-align: center;
+    position: absolute;
+    left: -60px;
+    top: 13px;
+}
+
+.year span {
+    font-family: 'montserratbold';
+    display: block;
+
+}
+
+@media (max-width: 991.98px) {
+    .resuly-year {
+        padding: 0 0 0 80px;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+    .result-banner {
+        background-color: #c4faf2;
+        background-image: none;
+
+    }
+
+    .result-bannertext {
+        margin-top: 20px;
+    }
+
+    .result-bannertext h3 {
+        font-size: 23px;
+    }
+
+    .result-bannertext p {
+        font-size: 20px;
+    }
+
+    .totalbox {
+        min-height: auto;
+        height: auto;
+        font-size: 20px;
+        background-image: none;
+        padding: 15px;
+
+    }
+
+    .totalbox p {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .examinfor {
+        height: auto;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 500.98px) {
+    .year {
+        left: -14px;
+        top: -25px;
+        font-size: 12px;
+    }
+
+    .resuly-year {
+        padding: 0;
+    }
+
+}

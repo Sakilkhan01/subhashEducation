@@ -1,0 +1,71 @@
+.courses-offers {
+    background-image: url(../images/classroom-top-left.svg), url(../images/classroom-bot-right.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-color: #f7fbff;
+    background-size: 53%;
+}
+.foundation-toppers {
+    background-image: url(../images/team-top-bg.svg), url(../images/toppers-bg.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #eff6fd;
+}
+.photoalbum {
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+    padding-bottom: 20px;
+    position: relative;
+    vertical-align: top;
+    width: 24%;
+}
+.frontlayer {
+
+    background: #fff;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 2;
+
+}
+	.photoalbum .midlelayer, .photoalbum .bottomlayer, .photoalbum .frontlayer {
+
+    border: solid 1px #002147;
+
+}
+	.bottomlayer {
+
+    left: 6px;
+    top: 6px;
+    z-index: 0;
+
+}
+	.midlelayer, .bottomlayer {
+
+    background: #fff;
+    position: absolute;
+
+}
+.midlelayer{
+    left: 3px;
+    top: 3px;
+    z-index: 1;
+}
+	.albumheading {
+	overflow: hidden;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+	img {
+line-height: 146px;
+    border: 0;
+
+}
+@media only screen and (max-device-width: 480px) and (min-device-width: 320px){
+	.photoalbum {
+	margin: 0px;
+    width: 100%;
+}
+}
