@@ -18,7 +18,7 @@
                         data-type="headers/Text">
                         <!--textWidget-->
                         <div class="text-widget-content">
-                           <p>Mukundgarh Mandi , Jhunjhunu (Raj.)</p>
+                           <p>{{ADDRESS}}</p>
                         </div>
                      </div>
                      <div class="header-widget-space" style="width: 35px"></div>
@@ -33,7 +33,9 @@
                         data-type="headers/Text">
                         <!--textWidget-->
                         <div class="text-widget-content">
-                           <p> <a href="#">7425064174</a>, <a href="#">8104348272</a>, <a href="#">7733945525</a></p>
+                           <p><a href="#">{{PHONE_NO[0]}}</a>, 
+                              <a href="#">{{PHONE_NO[1]}}</a>, 
+                              <a href="#">{{PHONE_NO[2]}}</a></p>
                         </div>
                      </div>
                   </div>
@@ -41,16 +43,16 @@
                   </div>
                   <div class="flex-1 header-widget-container flex flex-row justify-flex-end">
                      <div class="header-widget" id="header-widget-1582544254322" data-type="headers/SocialMedia">
-                        <a class="social-media-button slow-transition-bg" href="https://facebook.com" target="_blank">
+                        <a class="social-media-button slow-transition-bg" href="{{FACEBOOK}}" target="_blank">
                         <i class="fa fa-facebook bg-color-primary"></i>
                         </a>
-                        <a class="social-media-button slow-transition-bg" href="https://twitter.com" target="_blank">
+                        <a class="social-media-button slow-transition-bg" href="{{TWITTER}}" target="_blank">
                         <i class="fa fa-twitter bg-color-primary"></i>
                         </a>
-                        <a class="social-media-button slow-transition-bg" href="http://Your url" target="_blank">
+                        <a class="social-media-button slow-transition-bg" href="{{LINKEDIN}}" target="_blank">
                         <i class="fa fa-linkedin-square bg-color-primary"></i>
                         </a>
-                        <a class="social-media-button slow-transition-bg" href="http://Your url" target="_blank">
+                        <a class="social-media-button slow-transition-bg" href="{{YOUTUBE}}" target="_blank">
                         <i class="fa fa-youtube-play bg-color-primary"></i>
                         </a>
                      </div>
@@ -92,7 +94,7 @@
                                     </a>
                                  </li>
                                  <li  class="  with-submenu">
-                                    <a class="website-nav-link" rel="tab" href="/about"
+                                    <a class="website-nav-link" rel="tab" href="javascript:void(0)"
                                        >
                                     About
                                     <i class="submenu-arrow fa fa-angle-right"></i>
@@ -109,10 +111,27 @@
                                     </div>
                                  </li>
                                  <li  class=" ">
-                                    <a class="website-nav-link" rel="tab" href="/admission"
+                                    <a class="website-nav-link" rel="tab" href="{{ route('selection.show') }}"
+                                       >
+                                    Selection Corner
+                                    </a>
+                                 </li>
+                                 <li  class="  with-submenu">
+                                    <a class="website-nav-link" rel="tab" href="javascript:void(0)"
                                        >
                                     Admission
+                                    <i class="submenu-arrow fa fa-angle-right"></i>
                                     </a>
+                                    <div>
+                                       <ul class=" ">
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('/hostel') }}" >Hostel</a>
+                                          </li>
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('documents') }}" >Documents</a>
+                                          </li>
+                                       </ul>
+                                    </div>
                                  </li>
                                  <li  class=" ">
                                     <a class="website-nav-link" rel="tab" href="/postove"
@@ -179,19 +198,39 @@
                               <i class="submenu-arrow fa fa-angle-right"></i>
                               </a>
                               <div>
-                                 <ul class=" ">
-                                    <li>
-                                       <a class="website-nav-link" rel="tab" href="/faculty-and-staff" >Faculty and Staff</a>
-                                    </li>
-                                 </ul>
-                              </div>
+                                       <ul class=" ">
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('/gallery') }}" >Photo Gallery</a>
+                                          </li>
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('videogallery') }}" >Video Gallery</a>
+                                          </li>
+                                       </ul>
+                                    </div>
                            </li>
                            <li  class=" ">
-                              <a class="website-nav-link" rel="tab" href="/admission"
-                                 >
-                              Admission
-                              </a>
+                                    <a class="website-nav-link" rel="tab" href="{{ route('selection.show') }}"
+                                       >
+                                    Selection Corner
+                                    </a>
                            </li>
+                           <li  class="  with-submenu">
+                                    <a class="website-nav-link" rel="tab" href="javascript:void(0)"
+                                       >
+                                    Admission
+                                    <i class="submenu-arrow fa fa-angle-right"></i>
+                                    </a>
+                                    <div>
+                                       <ul class=" ">
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('/hostel') }}" >Hostel</a>
+                                          </li>
+                                          <li>
+                                             <a class="website-nav-link" rel="tab" href="{{ url('documents') }}" >Documents</a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
                            <li  class=" ">
                               <a class="website-nav-link" rel="tab" href="/postove"
                                  >
@@ -212,14 +251,16 @@
                   data-type="headers/Text">
                   <!--textWidget-->
                   <div class="text-widget-content">
-                     <p>Mukundgarh Mandi , Jhunjhunu (Raj.)</p>
+                     <p>{{ADDRESS}}</p>
                   </div>
                </div>
                <div class="header-widget" id="header-widget-1582544254323-mobile"
                   data-type="headers/Text">
                   <!--textWidget-->
                   <div class="text-widget-content">
-                     <p> <a href="#">7425064174</a>, <a href="#">8104348272</a>, <a href="#">7733945525</a></p>
+                     <p><a href="#">{{PHONE_NO[0]}}</a>, 
+                              <a href="#">{{PHONE_NO[1]}}</a>, 
+                              <a href="#">{{PHONE_NO[2]}}</a></p>
                   </div>
                </div>
                <div class="header-widget" id="header-widget-1582544254322-mobile" data-type="headers/SocialMedia">
@@ -237,16 +278,16 @@
                      background: #444 !important;
                      }
                   </style>
-                  <a class="social-media-button slow-transition-bg" href="https://facebook.com" target="_blank">
+                  <a class="social-media-button slow-transition-bg" href="{{FACEBOOK}}" target="_blank">
                   <i class="fa fa-facebook bg-color-primary"></i>
                   </a>
-                  <a class="social-media-button slow-transition-bg" href="https://twitter.com" target="_blank">
+                  <a class="social-media-button slow-transition-bg" href="{{TWITTER}}" target="_blank">
                   <i class="fa fa-twitter bg-color-primary"></i>
                   </a>
-                  <a class="social-media-button slow-transition-bg" href="http://Your url" target="_blank">
+                  <a class="social-media-button slow-transition-bg" href="{{LINKEDIN}}" target="_blank">
                   <i class="fa fa-linkedin-square bg-color-primary"></i>
                   </a>
-                  <a class="social-media-button slow-transition-bg" href="http://Your url" target="_blank">
+                  <a class="social-media-button slow-transition-bg" href="{{YOUTUBE}}" target="_blank">
                   <i class="fa fa-youtube-play bg-color-primary"></i>
                   </a>
                </div>

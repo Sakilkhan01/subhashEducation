@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\CareerController;
 use App\Http\Controllers\admin\GalleryImageController;
 use App\Http\Controllers\admin\GalleryVideoController;
+use App\Http\Controllers\admin\SelectionController;
 use App\Http\Controllers\ContactController;
  
 
@@ -20,7 +21,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 Route::get('/', [HomeController::class, 'home']);
-Auth::routes(['register' => false,'home' => false]);
+Auth::routes(['register' => true,'home' => false]);
 
 
 
@@ -28,127 +29,14 @@ Auth::routes(['register' => false,'home' => false]);
 Route::get('/videogallery', [GalleryVideoController::class, 'FrontPage']);
 Route::get('/gallery', [GalleryImageController::class, 'FrontPage']);
 Route::get('/gallery/{slug}', [GalleryImageController::class, 'galleryView'])->name('image.slug');
-
-
-
 Route::get('contact-us', [ContactController::class, 'index']);
 Route::post('contact-us/store', [ContactController::class, 'store'])->name('contact_store');
-
-
-Route::get('/about-matrix', function () {
-    return view('front.pages.about.about-matrix');
+Route::get('selection', [SelectionController::class, 'frontPage'])->name('selection.show');
+Route::get('hostel', function () {
+    return view('front.pages.admission.hostel');
 });
-
-Route::get('/why-matrix', function () {
-    return view('front.pages.about.why-matrix');
-});
-
-Route::get('/facilities', function () {
-    return view('front.pages.about.facilities');
-});
-
-
-Route::get('/matrix-online-test-video-lab', function () {
-    return view('front.pages.about.matrix-online-test-video-lab');
-});
-
-Route::get('/testimonials', function () {
-    return view('front.pages.about.testimonials');
-});
-
-Route::get('/faq', function () {
-    return view('front.pages.about.faq');
-});
-
-
-Route::get('/courses', function () {
-    return view('front.pages.courses.coursesfilter');
-});
-
-Route::get('/result/advance', function () {
-    return view('front.pages.result.advanced');
-});
-
-Route::get('/result/main', function () {
-    return view('front.pages.result.main');
-});
-
-Route::get('competitive-exams-result', function () {
-    return view('front.pages.result.competitive-exams-result');
-});
-
-Route::get('final-college-allotment', function () {
-    return view('front.pages.result.final-college-allotment');
-});
-
-
-Route::get('matrix_alumni', function () {
-    return view('front.pages.result.matrix_alumni');
-});
-
-
-Route::get('applyonline', function () {
-    return view('front.pages.admissions.applyonline');
-});
-
-
-Route::get('apply-online-for-matrix-sat', function () {
-    return view('front.pages.admissions.apply-online-for-matrix-sat');
-});
-
-Route::get('searchmsatcandidate', function () {
-    return view('front.pages.admissions.searchmsatcandidate');
-});
-
-Route::get('download-msat-admitcard', function () {
-    return view('front.pages.admissions.download-msat-admitcard');
-});
-
-Route::get('fee-structure', function () {
-    return view('front.pages.admissions.fee-structure');
-});
-
-
-Route::get('matrix-scholarship', function () {
-    return view('front.pages.admissions.matrix-scholarship');
-});
-
-
-Route::get('downloads-paper', function () {
-    return view('front.pages.for_student.downloads-paper');
-});
-
-
-
-Route::get('jee-college-branch-predictor', function () {
-    return view('front.pages.for_student.jee-college-branch-predictor');
-});
-
-Route::get('jossacounselling/jeemainrankpredictor', function () {
-    return view('front.pages.for_student.jeemainrankpredictor');
-});
-
-Route::get('neetpredictor', function () {
-    return view('front.pages.for_student.neetpredictor');
-});
-
-Route::get('applynowforftp', function () {
-    return view('front.pages.career.applynowforftp');
-});
-
-
-Route::get('applynow/forjob', function () {
-    return view('front.pages.career.forjob');
-});
-
-
-Route::get('facultytrainingprogram', function () {
-    return view('front.pages.career.facultytrainingprogram');
-});
-
-
-Route::get('student-login', function () {
-    return view('front.pages.login');
+Route::get('documents', function () {
+    return view('front.pages.admission.documents');
 });
 
 
@@ -176,5 +64,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin','auth'], 'nampspace'
     Route::post('video-update/{id}', [GalleryVideoController::class, 'update'])->name('video.update');
     Route::get('video-delete/{id}', [GalleryVideoController::class, 'delete'])->name('video.delete');
 
+    Route::get('selection/list', [SelectionController::class, 'index'])->name('selection.list');
+    Route::get('selection/create', [SelectionController::class, 'create'])->name('selection.create');
+    Route::post('selection/store', [SelectionController::class, 'store'])->name('selection.store');
+    Route::post('selection/update/{id}', [SelectionController::class, 'update'])->name('selection.update');
+    Route::get('selection/edit/{id}', [SelectionController::class, 'edit'])->name('selection.edit');
+    Route::get('selection/delete/{id}', [SelectionController::class, 'delete'])->name('selection.delete');
 
 });

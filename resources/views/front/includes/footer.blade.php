@@ -128,16 +128,16 @@
                                  }
                               </style>
                               <div class="col20 f-left" style="text-align: left">
-                                 <a class="social-media-button slow-transition-bg" href="http://" target="_blank">
+                                 <a class="social-media-button slow-transition-bg" href="{{FACEBOOK}}" target="_blank">
                                  <i class="fa fa-facebook bg-color-primary"></i>
                                  </a>
-                                 <a class="social-media-button slow-transition-bg" href="http://" target="_blank">
+                                 <a class="social-media-button slow-transition-bg" href="{{TWITTER}}" target="_blank">
                                  <i class="fa fa-twitter bg-color-primary"></i>
                                  </a>
-                                 <a class="social-media-button slow-transition-bg" href="http://" target="_blank">
+                                 <a class="social-media-button slow-transition-bg" href="{{LINKEDIN}}" target="_blank">
                                  <i class="fa fa-linkedin bg-color-primary"></i>
                                  </a>
-                                 <a class="social-media-button slow-transition-bg" href="http://" target="_blank">
+                                 <a class="social-media-button slow-transition-bg" href="{{INSTAGRAM}}" target="_blank">
                                  <i class="fa fa-instagram bg-color-primary"></i>
                                  </a>
                               </div>
@@ -177,10 +177,10 @@
                               data-animation="lazyAnimation-"
                               style="margin-top: 0px; margin-left: 0px;">
                               <div class="text-widget-content">
-                                 <p style="line-height: 1.4;"><span style="font-size: 15px; color: rgb(137, 137, 137);">Mukundgarh Mandi , Jhunjhunu (Raj.)</span></p>
+                                 <p style="line-height: 1.4;"><span style="font-size: 15px; color: rgb(137, 137, 137);">{{ADDRESS}}</span></p>
                                  <p style="line-height: 1.4;"><span style="font-size: 15px; color: rgb(137, 137, 137);"><br></span></p>
-                                 <p style="line-height: 1.8;"><span style="color: rgb(137, 137, 137); font-size: 15px;">Phone: </span><span style="font-size: 15px; color: rgb(27, 87, 151);"><a href="#">7425064174</a>, <a href="#">8104348272</a>, <a href="#">7733945525</a></span></p>
-                                 <p style="line-height: 1.8;"><span style="color: rgb(137, 137, 137); font-size: 15px;">Email: </span><span style="font-size: 15px; color: rgb(27, 87, 151);">subhasheducationsociety@gmail.com</span></p>
+                                 <p style="line-height: 1.8;"><span style="color: rgb(137, 137, 137); font-size: 15px;">Phone: </span><span style="font-size: 15px; color: rgb(27, 87, 151);"><a href="#">{{PHONE_NO[0]}}</a>, <a href="#">{{PHONE_NO[1]}}</a>, <a href="#">{{PHONE_NO[2]}}</a></span></p>
+                                 <p style="line-height: 1.8;"><span style="color: rgb(137, 137, 137); font-size: 15px;">Email: </span><span style="font-size: 15px; color: rgb(27, 87, 151);">{{MAIL_ID}}</span></p>
                               </div>
                            </div>
                         </div>
