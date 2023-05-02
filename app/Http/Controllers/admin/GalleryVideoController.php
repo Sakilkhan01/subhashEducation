@@ -75,7 +75,7 @@ class GalleryVideoController extends Controller
     public function FrontPage()
     {
         $video = Video::where('status', 1)->get();
-        return view('front.pages.about.videogallery', compact('video'));
+        return view('front.pages.gallery.video', compact('video'));
     }
 
 }

@@ -151,14 +151,25 @@ class GalleryImageController extends Controller
 
     public function FrontPage()
     {
+       
         $images = imageTitle::withCount(['getImages'])->with(['getImages'])->where('status', 1)->orderBy('id', 'desc')->get();
-        return view('front.pages.about.gallery',compact('images'));
+        // dd( $images[0]->getImages);
+        return view('front.pages.gallery.images',compact('images'));
     }
 
     public function galleryView($slug)
-    {
-        $images = imageTitle::with(['gallery'])->where('slug', $slug)->get();
-        return view('front.pages.about.galleryView',compact('images'));
+    {   
+        
+        $images = DB::table('image_title')
+        ->leftJoin('gallery_image', 'image_title.id', '=', 'gallery_image.image_title_id')
+        ->where('image_title.slug', $slug)
+        ->get();
+
+        if(!$images->isEmpty()){
+            return view('front.pages.gallery.view-images',compact('images'));
+        }else{
+            return redirect('gallery');
+        }
     }
 
 
