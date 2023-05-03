@@ -30,7 +30,7 @@ class AdminMail extends Mailable
     {
         $from_email  = config('mail.from_email');
         $subject = 'Contact Us';
-        $title = 'Prilient Information Technologies';
+        $title = 'Subhash Education Society';
         
         return $this->view('mail.admin')
                     ->from($from_email,$title)

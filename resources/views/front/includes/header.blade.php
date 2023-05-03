@@ -140,9 +140,9 @@
                                     </a>
                                  </li>
                                  <li  class=" ">
-                                    <a class="website-nav-link" rel="tab" href="/free-consultation"
+                                    <a class="website-nav-link" rel="tab" href="{{ url('contact-us')}}"
                                        >
-                                    Contact
+                                    Contact Us
                                     </a>
                                  </li>
                               </ul>
@@ -238,9 +238,9 @@
                               </a>
                            </li>
                            <li  class=" ">
-                              <a class="website-nav-link" rel="tab" href="/free-consultation"
+                              <a class="website-nav-link" rel="tab" href="{{ url('contact-us')}}"
                                  >
-                              Contact
+                              Contact Us
                               </a>
                            </li>
                         </ul>
