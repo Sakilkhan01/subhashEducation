@@ -6,6 +6,7 @@ use App\Http\Controllers\admin\CareerController;
 use App\Http\Controllers\admin\GalleryImageController;
 use App\Http\Controllers\admin\GalleryVideoController;
 use App\Http\Controllers\admin\SelectionController;
+use App\Http\Controllers\admin\NewsController;
 use App\Http\Controllers\ContactController;
  
 
@@ -32,6 +33,7 @@ Route::get('/gallery/{slug}', [GalleryImageController::class, 'galleryView'])->n
 Route::get('contact-us', [ContactController::class, 'index']);
 Route::post('contact-us/store', [ContactController::class, 'store'])->name('contact_store');
 Route::get('selection', [SelectionController::class, 'frontPage'])->name('selection.show');
+Route::get('news', [NewsController::class, 'frontPage'])->name('news');
 Route::get('hostel', function () {
     return view('front.pages.admission.hostel');
 });
@@ -70,5 +72,14 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin','auth'], 'nampspace'
     Route::post('selection/update/{id}', [SelectionController::class, 'update'])->name('selection.update');
     Route::get('selection/edit/{id}', [SelectionController::class, 'edit'])->name('selection.edit');
     Route::get('selection/delete/{id}', [SelectionController::class, 'delete'])->name('selection.delete');
+
+
+    Route::get('news/list', [NewsController::class, 'index'])->name('news.list');
+    Route::get('news/create', [NewsController::class, 'create'])->name('news.create');
+    Route::post('news/store', [NewsController::class, 'store'])->name('news.store');
+    Route::get('news/view/{id}', [NewsController::class, 'show'])->name('news.view');
+    Route::get('news/edit/{id}', [NewsController::class, 'edit'])->name('news.edit');
+    Route::post('news/update/{id}', [NewsController::class, 'update'])->name('news.update');
+    Route::get('news/delete/{id}', [NewsController::class, 'delete'])->name('news.delete');
 
 });

@@ -61,7 +61,7 @@
             </div>
             <div class="header-row  header-row-main"
                style="background-color: #ffffff;">
-               <div class="header-row-space top" style="height: 15px"></div>
+               <div style="height: 10px"></div>
                <div class="flex flex-row align-center flex-header container relative">
                   <div class="flex-1 header-widget-container flex flex-row">
                      <div class="header-widget-space" style="width: 0px"></div>
@@ -134,7 +134,7 @@
                                     </div>
                                  </li>
                                  <li  class=" ">
-                                    <a class="website-nav-link" rel="tab" href="/postove"
+                                    <a class="website-nav-link" rel="tab" href="{{ url('news') }}"
                                        >
                                     News
                                     </a>
@@ -151,6 +151,7 @@
                      </div>
                   </div>
                </div>
+               <div style="height: 10px"></div>
             </div>
          </div>
          <div class="mobile-header-overlay"></div>
@@ -232,7 +233,7 @@
                                     </div>
                                  </li>
                            <li  class=" ">
-                              <a class="website-nav-link" rel="tab" href="/postove"
+                              <a class="website-nav-link" rel="tab" href="{{ url('news') }}"
                                  >
                               News
                               </a>

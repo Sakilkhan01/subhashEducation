@@ -1,6 +1,10 @@
 @extends('front.layouts.app')
 @section('content')
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<div class="content slide">
+<div class="content-wrapper">
+	
+
 <div class="container py-5">
 	<div class="col-lg-9 col-12 mx-auto card p-4">
 		<form method="POST" action="{{ route('contact_store') }}">
@@ -75,5 +79,7 @@
 	</div>
 		</form>
 	</div>
+</div>
+</div>
 </div>
 @stop

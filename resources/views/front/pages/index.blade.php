@@ -1,7 +1,5 @@
 @extends('front.layouts.app')
 @section('content')
-
-         <a class="scrollToTop transition-all fa fa-angle-up" title="Scroll To Top"></a>
          <div class="content slide">
             <div class="content-wrapper">
                <div class="content">

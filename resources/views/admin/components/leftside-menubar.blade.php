@@ -41,6 +41,13 @@
                                 <span class="hide-menu">Selection Corner</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('news.list') }}"
+                                aria-expanded="false">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">News</span>
+                            </a>
+                        </li>
                     </ul>
 
                 </nav>
